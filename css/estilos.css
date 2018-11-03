@@ -2,29 +2,36 @@ body {
     background-color: #333;
     color: #fff;
 }
-.navbar {
-    border-bottom: #c0392b 3px solid;
-    opacity: .7;
-}
+
 #home-section {
     background: url('../img/bg.png') no-repeat;
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
 }
-.home-inner {
-    padding: 150px;
+.nav-item:hover {
+    animation-name: prueba;
+    animation-duration: .5s;
+    animation-iteration-count: unset;
+    animation-timing-function: ease-in;
 }
-.dark-overlay{
-    background-color: rgba(0,0,0,.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-width: 100%;
-}
-@media(max-width: 992px){
-    .home-inner{
-        padding-top: 100px;
+@keyframes prueba{
+    0%{
+        transform: translate(0px);
     }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.info-section img{
+    max-width: 100%;
+}
+.formulario {
+    /* background-color: #c0392b; */
+    background-color: rgba(192 ,57,43 ,.7);
 }
